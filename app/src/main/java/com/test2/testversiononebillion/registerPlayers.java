@@ -22,7 +22,7 @@ private TextView mNumbPlayers;
         Boolean wolfOn = intent.getBooleanExtra("wolfOn", false);
         Boolean creditOn = intent.getBooleanExtra("creditOn", false);
 
-        mNumbPlayers.setText("Här är dina värden: " + players + " Players on " + holes + " holes, wolf is turned " + isOn(wolfOn) + " and credits is turned " + isOn(creditOn));
+        mNumbPlayers.setText("Den här texten är nu ändrad. Här är dina värden: " + players + " Players on " + holes + " holes, wolf is turned " + isOn(wolfOn) + " and credits is turned " + isOn(creditOn));
     }
 
     private String isOn(Boolean wolfOn) {
