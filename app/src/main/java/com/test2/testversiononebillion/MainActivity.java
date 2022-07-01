@@ -4,18 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
 public class MainActivity extends AppCompatActivity {
 
-    private Button mTestKnapp;
+    private Button mStartKnapp;
     private EditText mNumbPlayers;
     private EditText mNumbHoles;
     private Switch mSwitchWolf;
@@ -31,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
         mSwitchWolf = (Switch) findViewById(R.id.switchWolf);
         mSwitchCredit = (Switch) findViewById(R.id.switchCredit);
 
-    mTestKnapp = (Button) findViewById(R.id.buttonStart);
-        mTestKnapp.setOnClickListener(new View.OnClickListener() {
+
+    mStartKnapp = (Button) findViewById(R.id.buttonStart); // Koppla variabeln till knappen (tror jag)
+    mStartKnapp.setOnClickListener(new View.OnClickListener() { // Säg åt knappen att lyssna efter att någon trycker?
+
             @Override
             public void onClick(View v) {
                 // Vad händer när man klickar på knappen?
