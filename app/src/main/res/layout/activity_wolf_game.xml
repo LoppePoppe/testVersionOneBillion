@@ -14,7 +14,7 @@
         android:text="1: "
         app:layout_constraintBottom_toTopOf="@+id/secondPlaceNr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.993" />
@@ -23,28 +23,31 @@
         android:id="@+id/secondPlaceNr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
         android:layout_marginBottom="20dp"
         android:text="2: "
         app:layout_constraintBottom_toTopOf="@+id/thirdPlaceNr"
-        tools:layout_editor_absoluteX="46dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/thirdPlaceNr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
         android:layout_marginBottom="20dp"
         android:text="3: "
         app:layout_constraintBottom_toTopOf="@+id/fourthPlaceNr"
-        tools:layout_editor_absoluteX="46dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/fourthPlaceNr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
         android:layout_marginBottom="448dp"
         android:text="4: "
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="46dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/firstPlaceName"
@@ -69,7 +72,7 @@
         android:text="Second Place"
         app:layout_constraintBottom_toTopOf="@+id/thirdPlaceName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toEndOf="@+id/secondPlaceNr" />
 
     <TextView
