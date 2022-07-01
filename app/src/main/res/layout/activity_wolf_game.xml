@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WolfGame">
+
+    <TextView
+        android:id="@+id/firstPlaceNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="1: "
+        app:layout_constraintBottom_toTopOf="@+id/secondPlaceNr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <TextView
+        android:id="@+id/secondPlaceNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="2: "
+        app:layout_constraintBottom_toTopOf="@+id/thirdPlaceNr"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/thirdPlaceNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="3: "
+        app:layout_constraintBottom_toTopOf="@+id/fourthPlaceNr"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/fourthPlaceNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="448dp"
+        android:text="4: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/firstPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="First place"
+        app:layout_constraintBottom_toTopOf="@+id/secondPlaceName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/firstPlaceNr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/secondPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="Second Place"
+        app:layout_constraintBottom_toTopOf="@+id/thirdPlaceName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/secondPlaceNr" />
+
+    <TextView
+        android:id="@+id/thirdPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="Thrid Place"
+        app:layout_constraintBottom_toTopOf="@+id/fourthPlaceName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/thirdPlaceNr" />
+
+    <TextView
+        android:id="@+id/fourthPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="448dp"
+        android:text="Fourth place"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fourthPlaceNr" />
+</androidx.constraintlayout.widget.ConstraintLayout>
