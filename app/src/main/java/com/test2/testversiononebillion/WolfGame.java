@@ -37,14 +37,15 @@ public class WolfGame extends AppCompatActivity {
         mTee3 = (TextView) findViewById(R.id.thirdTee);
         mTee4 = (TextView) findViewById(R.id.fourthTee);
 
+        String nameP1 = p1;
 
-        mTee1.setText(players.get(0).getName());
+        mTee1.setText(nameP1);
         mTee2.setText(players.get(1).getName());
         mTee3.setText(players.get(2).getName());
         mTee4.setText(players.get(3).getName());
 
 
-        gameLoop(nrOfHoles);
+        //gameLoop(nrOfHoles);
         //Byt till sista skärmen som visar final score
 
 
