@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,6 +29,17 @@ private Button mPlayButton;
         Boolean creditOn = intent.getBooleanExtra("creditOn", false);
 
         mNumbPlayers.setText("Här är dina värden: " + players + " Players on " + holes + " holes, wolf is turned " + isOn(wolfOn) + " and credits is turned " + isOn(creditOn));
+
+        mPlayButton = (Button) findViewById(R.id.buttonPlay);
+        mPlayButton.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick (View v){
+            Intent startWolf = new Intent(registerPlayers.this, WolfGame.class);
+            startActivity(startWolf);
+        }
+
+        });
+
     }
 
     private String isOn(Boolean wolfOn) {
