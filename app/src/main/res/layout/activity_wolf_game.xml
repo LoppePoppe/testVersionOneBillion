@@ -14,8 +14,6 @@
         android:layout_marginBottom="20dp"
         android:text="First place"
         app:layout_constraintBottom_toTopOf="@+id/secondPlaceName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/firstPlaceNr"
         app:layout_constraintTop_toBottomOf="@+id/holeNumber"
         app:layout_constraintVertical_bias="0.944" />
@@ -40,8 +38,6 @@
         android:layout_marginBottom="20dp"
         android:text="Thrid Place"
         app:layout_constraintBottom_toTopOf="@+id/fourthPlaceName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toEndOf="@+id/thirdPlaceNr" />
 
     <TextView
@@ -52,8 +48,6 @@
         android:layout_marginBottom="468dp"
         android:text="Fourth place"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/fourthPlaceNr" />
 
     <TextView
@@ -84,14 +78,13 @@
         android:id="@+id/firstPlaceNr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
         android:layout_marginBottom="20dp"
         android:text="1: "
         app:layout_constraintBottom_toTopOf="@+id/secondPlaceNr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/ScndScore"
@@ -145,8 +138,6 @@
         android:layout_marginBottom="20dp"
         android:text="Second Place"
         app:layout_constraintBottom_toTopOf="@+id/thirdPlaceName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toEndOf="@+id/secondPlaceNr" />
 
     <TextView
@@ -244,6 +235,7 @@
         android:layout_width="124dp"
         android:layout_height="52dp"
         android:layout_marginBottom="60dp"
+        android:background="@android:drawable/editbox_background_normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -255,6 +247,7 @@
         android:layout_width="124dp"
         android:layout_height="52dp"
         android:layout_marginBottom="60dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
@@ -265,6 +258,7 @@
         android:layout_width="124dp"
         android:layout_height="52dp"
         android:layout_marginBottom="60dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintStart_toStartOf="parent"

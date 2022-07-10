@@ -36,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Vad händer när man klickar på knappen?
                 String players = mNumbPlayers.getText().toString();
-                String holes = mNumbHoles.getText().toString();
+                String numberOfHoles = mNumbHoles.getText().toString();
                 Boolean wolfOn = mSwitchWolf.isChecked();
                 Boolean creditOn = mSwitchCredit.isChecked();
 
                 // Hur man skriver en pop up
-                Toast.makeText(MainActivity.this, "Du klickade på knappen och skickade med " + players + " " + holes, Toast.LENGTH_SHORT).show();
+                // Toast.makeText(MainActivity.this, "Du klickade på knappen och skickade med " + players + " " + holes, Toast.LENGTH_SHORT).show();
 
                 // Byt till ny sida
                 Intent intent = new Intent(MainActivity.this, registerPlayers.class);
                 intent.putExtra("players", players);
-                intent.putExtra("holes", holes);
+                intent.putExtra("holes", numberOfHoles);
                 intent.putExtra("wolfOn", wolfOn);
                 intent.putExtra("creditOn", creditOn);
                 startActivity(intent);

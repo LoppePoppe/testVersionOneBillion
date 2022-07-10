@@ -10,6 +10,7 @@
         android:layout_width="277dp"
         android:layout_height="48dp"
         android:hint="Player 1"
+        android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/p2Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +23,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:hint="Player 4"
+        android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,6 +34,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:hint="Player 3"
+        android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/p4Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,6 +45,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:hint="Player 2"
+        android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/p3Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
