@@ -11,68 +11,62 @@
         android:id="@+id/titleHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
         android:text="WOLF CREDIT THE GAME WOHO"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/numbPlayers"
         android:layout_width="23dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="number"
         android:text="4"
-        app:layout_constraintBottom_toTopOf="@+id/switchWolf"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toEndOf="@+id/textNumbPlayer"
         app:layout_constraintTop_toBottomOf="@+id/titleHome"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintVertical_bias="0.929" />
 
     <TextView
         android:id="@+id/textNumbPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:text="Number of players:"
-        app:layout_constraintBottom_toTopOf="@+id/switchWolf"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
-        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintBottom_toTopOf="@+id/textNumbHole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleHome"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.819" />
 
     <TextView
         android:id="@+id/textNumbHole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
         android:text="Number of holes:"
         app:layout_constraintBottom_toTopOf="@+id/switchWolf"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleHome"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="33dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:inputType="number"
         android:text="18"
+        android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/switchWolf"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleHome"
-        app:layout_constraintVertical_bias="0.996" />
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/textNumbHole" />
 
     <Switch
         android:id="@+id/switchWolf"
@@ -83,19 +77,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="0.962" />
 
     <Switch
         android:id="@+id/switchCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Credit"
         app:layout_constraintBottom_toTopOf="@+id/buttonStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.964" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonStart"
@@ -110,8 +103,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.874" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

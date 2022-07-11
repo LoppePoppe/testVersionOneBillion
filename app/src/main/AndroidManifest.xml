@@ -14,6 +14,9 @@
         android:theme="@style/Theme.TestVersionOneBillion"
         tools:targetApi="31">
         <activity
+            android:name=".WolfGame"
+            android:exported="false" />
+        <activity
             android:name=".registerPlayers"
             android:exported="false" />
         <activity
