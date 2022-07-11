@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,18 +20,21 @@ public class WolfGame extends AppCompatActivity {
     private TextView mHoleNr;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wolf_game);
 
         Intent intent = getIntent();
-        String p1 = intent.getStringExtra("mP1");
-        String p2 = intent.getStringExtra("mP2");
-        String p3 = intent.getStringExtra("mP3");
-        String p4 = intent.getStringExtra("mP4");
+        String p1 = intent.getStringExtra("p1");
+        String p2 = intent.getStringExtra("p2");
+        String p3 = intent.getStringExtra("p3");
+        String p4 = intent.getStringExtra("p4");
         int nrOfHoles = intent.getIntExtra("numberOfHoles", 1);
+
         addPlayer(p1, p2, p3, p4);
+        Toast.makeText(WolfGame.this, "Du klickade på " + p1 + p2 + p3 + p4, Toast.LENGTH_SHORT).show();
 
         mTee1 = (TextView) findViewById(R.id.firstTee);
         mTee2 = (TextView) findViewById(R.id.secondTee);
@@ -39,7 +43,7 @@ public class WolfGame extends AppCompatActivity {
 
         String nameP1 = p1;
 
-        mTee1.setText(nameP1);
+        mTee1.setText("p1");
         mTee2.setText(players.get(1).getName());
         mTee3.setText(players.get(2).getName());
         mTee4.setText(players.get(3).getName());
@@ -57,7 +61,7 @@ public class WolfGame extends AppCompatActivity {
         int currentHole = 1;
 
         do {
-            mHoleNr.setText("Hål " + currentHole);
+            mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
             //Vänta på input om lag
             //Vänta på input om vinst
             //Dela ut poäng
@@ -79,9 +83,8 @@ public class WolfGame extends AppCompatActivity {
         players.add(player2);
         players.add(player3);
         players.add(player4);
-
-
     }
+
 
 
 
