@@ -232,10 +232,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
+    <Button
+        android:id="@+id/tie"
         android:layout_width="124dp"
         android:layout_height="52dp"
+        android:text="Tie"
         android:layout_marginBottom="60dp"
         android:background="@android:drawable/editbox_background_normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -244,25 +245,29 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
+
+    <Button
+        android:id="@+id/buttonWinWolf"
         android:layout_width="124dp"
         android:layout_height="52dp"
+        android:text="Wolf Win"
         android:layout_marginBottom="60dp"
         android:background="@android:drawable/button_onoff_indicator_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/tie"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
+    <Button
+        android:id="@+id/buttonChallenger"
         android:layout_width="124dp"
         android:layout_height="52dp"
+        android:text="Other team win"
         android:layout_marginBottom="60dp"
         android:background="@android:drawable/button_onoff_indicator_on"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/tie"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
