@@ -1,4 +1,4 @@
-package com.test2.testversiononebillion;
+package com.test2.testVersionOneBillion;
 
 import android.content.Context;
 
