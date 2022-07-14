@@ -42,6 +42,7 @@ public class registerPlayers extends AppCompatActivity {
         Boolean wolfOn = intent.getBooleanExtra("wolfOn", false);
         Boolean creditOn = intent.getBooleanExtra("creditOn", false);
 
+        // Test för att se om den läser input
         mNumbPlayers.setText("Här är dina värden: " + noOfPlayers + " Players on " + numberOfHoles + " holes, wolf is turned " + isOn(wolfOn) + " and credits is turned " + isOn(creditOn));
 
         mPlayButton = (Button) findViewById(R.id.buttonPlay);
@@ -53,14 +54,16 @@ public class registerPlayers extends AppCompatActivity {
             String player2 = mP2.getText().toString();
             String player3 = mP3.getText().toString();
             String player4 = mP4.getText().toString();
+
+            // Test för att se om den läser input
             Toast.makeText(registerPlayers.this, "spelare " + player1 + player2 + player3 + player4, Toast.LENGTH_SHORT).show();
 
             Intent startWolf = new Intent(registerPlayers.this, WolfGame.class);
-            intent.putExtra("p1", player1);
-            intent.putExtra("p2", player2);
-            intent.putExtra("p3", player3);
-            intent.putExtra("p4", player4);
-            intent.putExtra("numberOfHoles", numberOfHoles);
+            startWolf.putExtra("p1", player1);
+            startWolf.putExtra("p2", player2);
+            startWolf.putExtra("p3", player3);
+            startWolf.putExtra("p4", player4);
+            startWolf.putExtra("numberOfHoles", numberOfHoles);
             startActivity(startWolf);}
         });
     }

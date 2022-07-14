@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class WolfGame extends AppCompatActivity {
 
     private ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<Player> scoreBoard = new ArrayList<>();
     private TextView mTee1;
     private TextView mTee2;
     private TextView mTee3;
@@ -39,11 +40,13 @@ public class WolfGame extends AppCompatActivity {
         String p4 = registeredPlayers.getStringExtra("p4");
         int nrOfHoles = registeredPlayers.getIntExtra("numberOfHoles", 5);
 
+        // Lägg till spelarna
         addPlayer(p1, p2, p3, p4);
-        Toast.makeText(WolfGame.this, "WolfGame " + p1 + p2 + p3 + p4 + nrOfHoles, Toast.LENGTH_SHORT).show();
+
+        // Test för att se om den läser input
+        Toast.makeText(WolfGame.this, "Player #: " + players.get(0).getPlayerNumber() + "Name: " + players.get(0).getName() + " Score: " + players.get(0).getScore(), Toast.LENGTH_SHORT).show();
 
         mHoleNr = (TextView) findViewById(R.id.holeNumber);
-
         mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
 
         mTee1 = (TextView) findViewById(R.id.firstTee);
@@ -56,7 +59,7 @@ public class WolfGame extends AppCompatActivity {
         mTee3.setText("" + p3);
         mTee4.setText("" + p4);
 
-        // Knapp för om Wolf vinner
+        // Knapp för om WOLF vinner
         mWolfWin = (Button) findViewById(R.id.buttonWinWolf);
         mWolfWin.setOnClickListener(new View.OnClickListener(){
 
@@ -65,13 +68,22 @@ public class WolfGame extends AppCompatActivity {
                 // Uppdatera scoreboard
                 // Justera teeordning
 
+                Toast.makeText(WolfGame.this, "Ny score: " + players.get(0).getScore(), Toast.LENGTH_SHORT).show();
+
+                // For players ( if ( player==wolf ))
+
+                // Håller koll på antal hål
                 if (currentHole < nrOfHoles){
+                    int scoreToAdd = 2;
+                    players.get(0).setScore(scoreToAdd);
+
                     currentHole++;
                     mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
+                    // Vad händer när spelet är slut?
                 }else{Toast.makeText(WolfGame.this, "Nu är det slut", Toast.LENGTH_SHORT).show();}
         }});
 
-        // Knapp för om Other laget vinner
+        // Knapp för om OTHER laget vinner
         mChallengerWin = (Button) findViewById(R.id.tie);
         mChallengerWin.setOnClickListener(new View.OnClickListener(){
             public void onClick(View buttonChallengerWin){
@@ -79,10 +91,11 @@ public class WolfGame extends AppCompatActivity {
                 mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
             }});
 
-        // Knapp om det blir lika
+        // Knapp om det blir LIKA
         mTie = (Button) findViewById(R.id.buttonChallenger);
         mTie.setOnClickListener(new View.OnClickListener(){
             public void onClick(View buttonTie){
+                Toast.makeText(WolfGame.this, "Player #: " + players.get(0).getPlayerNumber() + "Name: " + players.get(0).getName() + " Score: " + players.get(0).getScore(), Toast.LENGTH_SHORT).show();
                 currentHole++;
                 mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
             }});
