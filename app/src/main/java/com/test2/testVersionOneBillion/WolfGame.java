@@ -171,7 +171,7 @@ public class WolfGame extends AppCompatActivity {
                     j--; // återställ j
                 }
             }
-            scoreBoard.set(j + 1, key); // sätt värdet från key på platsen efter j
+            scoreBoard.set(j + 1, key); // sätt värdet från key på platsen efter j...
         }
 
     }
