@@ -156,7 +156,7 @@ public class WolfGame extends AppCompatActivity {
             // så länge j är större än 0 och key är mindre än j
             while (j >= 0 && key.getScore() <= scoreBoard.get(j).getScore()) {
 
-                // kolla om svanslängden är lika
+                // kolla om score är lika
                 if (key.getScore() == scoreBoard.get(j).getScore()) {
 
                     if (key.getName().compareTo(scoreBoard.get(j).getName()) < 0) { // jämför score
