@@ -48,7 +48,7 @@ public class WolfGame extends AppCompatActivity {
         mHoleNr = (TextView) findViewById(R.id.holeNumber);
         mHoleNr.setText("Hål " + (Integer.toString(currentHole)));
 
-        // Visa tee ordning
+        // Visa tee ordning HÄR ÄR PROBLEMET JUST NU
         setTeeOrder();
 
 
